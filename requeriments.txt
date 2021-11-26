@@ -1,0 +1,5 @@
+Flask==2.0.2
+mysql-connector==2.2.9
+Flask-Cors==3.0.10
+marshmallow==3.14.1
+bcrypt==3.2.0
