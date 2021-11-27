@@ -1,19 +1,19 @@
 import bcrypt
 import random
 
-def encrypt(string, rtn="string"):
+def encrypt(string, need="string"):
     s = random.randint(5, 10)
     salt = bcrypt.gensalt(s)
     hashed = bcrypt.hashpw(bytes(str(string), encoding="utf-8"), salt)
 
-    if rtn == "string":
+    if need == "string":
         return hashed.decode("utf-8")
-    elif rtn == "byte":
+    elif need == "byte":
         return hashed
     else:
-        return hashed.decode("utf-8")
+        raise Exception("need must be 'string' or 'byte'")
 
-def decrypt(EncValidate, EncCompare):
+def validate(EncValidate, EncCompare):
     return bcrypt.checkpw(
         bytes(str(EncValidate), encoding="utf-8"),
         bytes(str(EncCompare), encoding="utf-8"),
