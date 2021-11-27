@@ -1,9 +1,9 @@
-Api rick and morty with flask (mvc)
+Api rick and morty in python using flask (mvc)
 =======
 
 Get information about [flask]
 
-Crud using engine MySQL
+Crud using engine SqlAlchemy
 =======
 
 You can install and run:
