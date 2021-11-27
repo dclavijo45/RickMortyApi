@@ -3,7 +3,7 @@ Api rick and morty in python using flask (mvc)
 
 Get information about [flask]
 
-Crud using engine SqlAlchemy
+Crud using ORM SqlAlchemy
 =======
 
 You can install and run:
